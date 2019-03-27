@@ -1,0 +1,23 @@
+CREATE DATABASE u3149385;
+
+use u3149385;
+
+CREATE TABLE accounts (
+	id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	username VARCHAR(30) NOT NULL,
+	password VARCHAR(100) NOT NULL,
+	fullname VARCHAR(50),    
+	date TIMESTAMP
+);
+
+
+use u3149385;
+
+CREATE TABLE userdb (
+	id INT(10) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
+	username VARCHAR(30) NOT NULL,
+	tasktitle VARCHAR(100) NOT NULL,
+	description VARCHAR(500),  
+	duedate DATE,
+	date TIMESTAMP
+);
